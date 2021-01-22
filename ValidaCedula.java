@@ -2,7 +2,7 @@
     {
         int suma=0;
         String digitosProvincia = numeroCedula.substring(0,2);
-        if(numeroCedula.length()!= 10 || Integer.parseInt(digitosProvincia) > 24 || Integer.parseInt(digitosProvincia) < 0 || Integer.parseInt(String.valueOf(numeroCedula.charAt(2))) < 6)
+        if(numeroCedula.length()!= 10 || Integer.parseInt(digitosProvincia) > 24 || Integer.parseInt(digitosProvincia) < 0 || Integer.parseInt(String.valueOf(numeroCedula.charAt(2))) > 6)
             return false;
         else{
             int a[]=new int [numeroCedula.length()/2];
